@@ -13,9 +13,29 @@ export default function Header() {
 
   return (
     <header className="header">
+      {menuOpen && (
+        <div className="menu-overlay">
+
+          <button
+            className="menu-close"
+            onClick={() => setMenuOpen(false)}
+          >
+            ✕
+          </button>
+
+          <div className="menu-content">
+            <Link href="#" onClick={() => setMenuOpen(false)}>Про Фонд</Link>
+            <Link href="#" onClick={() => setMenuOpen(false)}>Проекти</Link>
+            <Link href="#" onClick={() => setMenuOpen(false)}>Партнерам</Link>
+            <Link href="#" onClick={() => setMenuOpen(false)}>Банк ідей</Link>
+          </div>
+
+        </div>
+      )}
+
       <Container>
         <div className="header-inner">
-            
+
           <div className="header-left">
             <img
               src="/logo.png"
@@ -23,31 +43,8 @@ export default function Header() {
               className="header-logo"
               onClick={() => setMenuOpen(!menuOpen)}
             />
-
-            {menuOpen && (
-            <div className="menu-overlay">
-
-                {/* CLOSE BUTTON */}
-                <button
-                className="menu-close"
-                onClick={() => setMenuOpen(false)}
-                >
-                ✕
-                </button>
-
-                {/* MENU */}
-                <div className="menu-content">
-                <Link href="#" onClick={() => setMenuOpen(false)}>Про Фонд</Link>
-                <Link href="#" onClick={() => setMenuOpen(false)}>Проекти</Link>
-                <Link href="#" onClick={() => setMenuOpen(false)}>Партнерам</Link>
-                <Link href="#" onClick={() => setMenuOpen(false)}>Банк ідей</Link>
-                </div>
-
-            </div>
-            )}
           </div>
 
-          {/* CENTER NAV (desktop only) */}
           <nav className="header-nav">
             <Link href="#">Про Фонд</Link>
             <Link href="#">Проекти</Link>
@@ -55,10 +52,8 @@ export default function Header() {
             <Link href="#">Банк ідей</Link>
           </nav>
 
-          {/* RIGHT */}
           <div className="header-right">
 
-            {/* LANG */}
             <div className="lang">
               <button
                 className="lang-btn"
