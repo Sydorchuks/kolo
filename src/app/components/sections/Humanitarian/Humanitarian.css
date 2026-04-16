@@ -1,0 +1,161 @@
+.humanitarian {
+  padding: 40px 0;
+  background: #F3F3F3;
+}
+
+.humanitarian-container {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.humanitarian h2 {
+  font-size: 56px;
+  line-height: 1.15;
+  color: #0B3D91;
+  margin-bottom: 24px;
+  max-width: 800px;
+}
+
+.humanitarian-text {
+  font-size: 20px;
+  color: #0B3D91;
+  max-width: 700px;
+  margin-bottom: 12px;
+}
+
+.humanitarian-link {
+  font-size: 20px;
+  color: #0B3D91;
+  margin-bottom: 50px;
+}
+
+.humanitarian-link span {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.humanitarian-cards {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.humanitarian-card {
+  background: #163E8C;
+  border-radius: 30px;
+  padding: 40px;
+  color: #fff;
+  width: 42%;
+  position: relative;
+}
+
+.humanitarian-card h3 {
+  font-size: 22px;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  line-height: 0.5;
+}
+
+.card-decor {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 140px;
+}
+
+@media (max-width: 1024px) {
+  .humanitarian h2 {
+    font-size: 44px;
+    max-width: 650px;
+  }
+
+  .humanitarian-text,
+  .humanitarian-link {
+    font-size: 18px;
+  }
+
+  .humanitarian-cards {
+    gap: 24px;
+  }
+
+  .humanitarian-card {
+    width: 48%;
+    padding: 30px;
+  }
+
+  .card-content {
+    font-size: 16px;
+    line-height: 1.2;
+  }
+}
+
+@media (max-width: 768px) {
+  .humanitarian-container {
+    width: 80%;
+  }
+
+  .humanitarian h2 {
+    font-size: 36px;
+    max-width: 100%;
+  }
+
+  .humanitarian-text,
+  .humanitarian-link {
+    font-size: 16px;
+  }
+
+  .humanitarian-cards {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .humanitarian-card {
+    width: 100%;
+    padding: 28px;
+  }
+
+  .card-content {
+    font-size: 15px;
+    line-height: 1.4;
+  }
+
+  .card-decor {
+    width: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  .humanitarian {
+    padding: 30px 0;
+  }
+
+  .humanitarian-container {
+    width: 78%;
+  }
+
+  .humanitarian h2 {
+    font-size: 28px;
+  }
+
+  .humanitarian-text,
+  .humanitarian-link {
+    font-size: 14px;
+  }
+
+  .humanitarian-card {
+    padding: 22px;
+    border-radius: 24px;
+  }
+
+  .card-content {
+    font-size: 14px;
+  }
+
+  .card-decor {
+    width: 80px;
+  }
+}

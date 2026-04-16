@@ -33,7 +33,7 @@ export default function Hero() {
 
           <div className="hero-badge">
             <div className="hero-badge-icons">
-              ✊ 🇺🇦
+              ✊ <span className="fi fi-ua"></span>
             </div>
 
             <div className="hero-badge-text">

@@ -1,8 +1,11 @@
+import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import Directions from "./components/sections/Directions/Directions";
 import DonationDetails from "./components/sections/DonationDetails/DonationDetails";
 import DonationStats from "./components/sections/DonationStats/DonationStats";
+import Gallery from "./components/sections/Gallery/Gallery";
 import Hero from "./components/sections/Hero/Hero";
+import Humanitarian from "./components/sections/Humanitarian/Humanitarian";
 import Motivation from "./components/sections/Motivation/Motivation";
 import News from "./components/sections/News/News";
 import Partners from "./components/sections/Partners/Partners";
@@ -22,6 +25,9 @@ export default function Home() {
     <DonationStats />
     <News />
     <DonationDetails />
+    <Humanitarian />
+    <Gallery />
+    <Footer />
     </>
   )
 }

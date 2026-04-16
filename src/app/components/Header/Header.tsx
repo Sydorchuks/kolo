@@ -2,36 +2,57 @@
 
 import "./Header.css"
 import Link from "next/link"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import Container from "../ui/Container/Container"
 import Button from "../ui/Button/Button"
+import { createPortal } from "react-dom"
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false)
   const [langOpen, setLangOpen] = useState(false)
   const [lang, setLang] = useState("UA")
 
+  useEffect(() => {
+    if (menuOpen) {
+      document.body.style.overflow = "hidden"
+      document.documentElement.style.overflow = "hidden"
+    } else {
+      document.body.style.overflow = ""
+      document.documentElement.style.overflow = ""
+    }
+
+    return () => {
+      document.body.style.overflow = ""
+      document.documentElement.style.overflow = ""
+    }
+  }, [menuOpen])
+
   return (
     <header className="header">
-      {menuOpen && (
+    {menuOpen && typeof window !== "undefined" &&
+      createPortal(
         <div className="menu-overlay">
+          <div className="menu-inner">
 
-          <button
-            className="menu-close"
-            onClick={() => setMenuOpen(false)}
-          >
-            ✕
-          </button>
+            <button
+              className="menu-close"
+              onClick={() => setMenuOpen(false)}
+            >
+              ✕
+            </button>
 
-          <div className="menu-content">
-            <Link href="#" onClick={() => setMenuOpen(false)}>Про Фонд</Link>
-            <Link href="#" onClick={() => setMenuOpen(false)}>Проекти</Link>
-            <Link href="#" onClick={() => setMenuOpen(false)}>Партнерам</Link>
-            <Link href="#" onClick={() => setMenuOpen(false)}>Банк ідей</Link>
+            <div className="menu-content">
+              <Link href="#" onClick={() => setMenuOpen(false)}>Про Фонд</Link>
+              <Link href="#" onClick={() => setMenuOpen(false)}>Проекти</Link>
+              <Link href="#" onClick={() => setMenuOpen(false)}>Партнерам</Link>
+              <Link href="#" onClick={() => setMenuOpen(false)}>Банк ідей</Link>
+            </div>
+
           </div>
-
-        </div>
-      )}
+        </div>,
+        document.body
+      )
+}
 
       <Container>
         <div className="header-inner">
