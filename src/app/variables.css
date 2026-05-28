@@ -1,0 +1,76 @@
+:root {
+  /* FONT */
+  --font-main: "Gilroy", sans-serif;
+
+  /* COLORS */
+  --color-blue-500: #0047BB;
+  --color-blue-700: #002B70;
+  --color-blue-800: #042D88;
+  --color-blue-900: #0B3D91;
+
+  --color-white: #FFFFFF;
+  --color-yellow: #FFD600;
+  --color-black: #000000;
+  --color-gray-50: #F3F3F3;
+  --color-yellow-light: #FFE433;
+
+  /* SURFACES */
+  --color-surface-primary: #FFFFFF;
+  --color-surface-secondary: #F3F3F3;
+  --color-surface-dark: #042D88;
+
+  /* TYPOGRAPHY */
+  --font-size-caption: 14px;
+
+  --font-size-body-sm: 15px;
+  --font-size-body-md: 16px;
+  --font-size-body-lg: 18px;
+  --font-size-body-xl: 20px;
+  --font-size-body-2xl: 24px;
+
+  --font-size-title-md: 40px;
+  --font-size-title-lg: 50px;
+
+  /* TRANSITION */
+  --transition-default:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease;
+
+  /* LAYOUT */
+  --container-padding: 100px;
+
+  --section-padding-sm: 60px;
+  --section-padding-md: 100px;
+  --section-padding-lg: 140px;
+
+  /* RADIUS */
+  --radius-sm: 8px;
+  --radius-md: 24px;
+  --radius-lg: 30px;
+  --radius-xl: 40px;
+  --radius-2xl: 40px;
+  --radius-pill: 999px;
+  --button-radius-circle: 50%;
+
+  /* BUTTONS */
+  --button-padding-sm: 8px 16px;
+  --button-padding-md: 12px 24px;
+  --button-padding-lg: 16px 32px;
+
+  --button-height-sm: 38px;
+  --button-height-md: 48px;
+  --button-height-lg: 52px;
+
+  /* HEADER */
+  --header-logo-size: 49px;
+  --header-nav-gap: 50px;
+  --header-actions-gap: 10px;
+  --header-nav-to-actions: 150px;
+
+  /* Z-INDEX */
+  --z-dropdown: 100;
+  --z-overlay: 1000;
+  --z-modal: 1100;
+}

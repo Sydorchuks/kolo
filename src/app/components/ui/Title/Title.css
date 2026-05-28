@@ -17,14 +17,14 @@
 .title-text {
   font-size: 32px;
   font-weight: 600;
-  color: #0B3D91;
+  color: var(--color-blue-900);
   white-space: nowrap;
 }
 
 .title-line {
   flex: 1;
   height: 2px;
-  background: #0B3D91;
+  background: var(--color-blue-900);
   position: relative;
 }
 
@@ -35,8 +35,8 @@
   top: 50%;
   width: 8px;
   height: 8px;
-  background: #0B3D91;
-  border-radius: 50%;
+  background: var(--color-blue-900);
+  border-radius: var(--radius-pill);
   transform: translateY(-50%);
 }
 
@@ -51,8 +51,8 @@
 .title-dot {
   width: 6px;
   height: 6px;
-  background: #0B3D91;
-  border-radius: 50%;
+  background: var(--color-blue-900);
+  border-radius: var(--radius-pill);
   position: absolute;
   left: 0;
   top: -2.5px;

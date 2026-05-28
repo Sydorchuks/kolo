@@ -1,12 +1,12 @@
 .donation-details {
   padding: 120px 0 60px;
-  background: #F3F3F3;
+  background: var(--color-surface-secondary);
 }
 
 .donation-details h2 {
-  font-size: 50px;
+  font-size: var(--font-size-title-lg);
   line-height: 95%;
-  color: #0B3D91;
+  color: var(--color-blue-900);
   max-width: 900px;
   margin-bottom: 38px;
   font-weight: 600;
@@ -19,32 +19,32 @@
 }
 
 .donation-details .btn-primary {
-  background: #FFD400;
-  color: #0B3D91;
+  background: var(--color-yellow);
+  color: var(--color-blue-900);
   border: none;
   padding: 13px 30px;
-  border-radius: 30px;
+  border-radius: var(--radius-lg);
   cursor: pointer;
-  font-size: 16px;
+  font-size: var(--font-size-body-md);
   font-weight: 600;
 }
 
 .donation-details .btn-outline {
   background: transparent;
-  border: 2px solid #0B3D91;
+  border: 2px solid var(--color-blue-900);
   padding: 13px 30px;
-  border-radius: 30px;
+  border-radius: var(--radius-lg);
   cursor: pointer;
-  color: #0B3D91;
-  font-size: 16px;
+  color: var(--color-blue-900);
+  font-size: var(--font-size-body-md);
   font-weight: 600;
 }
 
 .donation-details .donation-box {
   width: 100% !important;
   min-height: 339px;
-  background: #042D88;
-  border-radius: 30px;
+  background: var(--color-surface-dark);
+  border-radius: var(--radius-lg);
   padding: 36px 38px 45px 33px !important;
   box-sizing: border-box;
 }
@@ -68,8 +68,8 @@
   width: 220px;
   margin: 0;
   flex-shrink: 0;
-  color: #FFFFFF;
-  font-size: 20px;
+  color: var(--color-white);
+  font-size: var(--font-size-body-xl);
   font-weight: 500;
   line-height: 110%;
 }
@@ -85,8 +85,8 @@
 
 .donation-details .donation-value span {
   margin: 0;
-  color: #FFFFFF;
-  font-size: 20px !important;
+  color: var(--color-white);
+  font-size: var(--font-size-body-xl) !important;
   font-weight: 400;
   line-height: 120%;
   text-align: right;
@@ -119,11 +119,11 @@
   bottom: 30px;
   left: 50%;
   transform: translateX(-50%) translateY(20px);
-  background: #0B3D91;
-  color: #FFFFFF;
+  background: var(--color-blue-900);
+  color: var(--color-white);
   padding: 12px 24px;
-  border-radius: 30px;
-  font-size: 14px;
+  border-radius: var(--radius-lg);
+  font-size: var(--font-size-caption);
   opacity: 0;
   pointer-events: none;
   transition: all 0.3s ease;
@@ -151,11 +151,11 @@
 
   .donation-details .donation-label {
     width: 190px;
-    font-size: 18px;
+    font-size: var(--font-size-body-lg);
   }
 
   .donation-details .donation-value span {
-    font-size: 18px !important;
+    font-size: var(--font-size-body-lg) !important;
   }
 }
 
@@ -180,7 +180,7 @@
     height: 46px;
     margin-top: 38px;
     padding: 0 26px;
-    font-size: 15px;
+    font-size: var(--font-size-body-sm);
   }
 
   .donation-details .donation-box {
@@ -231,11 +231,11 @@
   .donation-details .btn-outline {
     height: 44px;
     padding: 0 24px;
-    font-size: 14px;
+    font-size: var(--font-size-caption);
   }
 
   .donation-details .donation-box {
-    border-radius: 24px;
+    border-radius: var(--radius-md);
     padding: 24px 22px 28px !important;
   }
 
@@ -251,7 +251,7 @@
 
   .donation-details .donation-label {
     width: 100%;
-    font-size: 16px;
+    font-size: var(--font-size-body-md);
   }
 
   .donation-details .donation-value {
@@ -262,7 +262,7 @@
 
   .donation-details .donation-value span {
     text-align: left;
-    font-size: 16px !important;
+    font-size: var(--font-size-body-md) !important;
     line-height: 130%;
   }
 
@@ -306,9 +306,9 @@
     width: 100%;
     height: 52px;
     padding: 0 20px;
-    font-size: 15px;
+    font-size: var(--font-size-body-sm);
     margin-top: 0;
-    border-radius: 999px;
+    border-radius: var(--radius-pill);
   }
 
   .donation-details .donation-box {
@@ -330,7 +330,7 @@
 
   .donation-details .donation-label {
     width: 100%;
-    font-size: 15px;
+    font-size: var(--font-size-body-sm);
     line-height: 120%;
   }
 
@@ -343,7 +343,7 @@
 
   .donation-details .donation-value span {
     width: 100%;
-    font-size: 15px !important;
+    font-size: var(--font-size-body-sm) !important;
     line-height: 135%;
     text-align: left;
     white-space: normal;

@@ -1,41 +1,5 @@
 @import "flag-icons/css/flag-icons.min.css";
-
-:root {
-  --font-main: "Gilroy", sans-serif;
-
-  --color-primary: #002B70;
-  --color-secondary: #042D88;
-
-  --color-white: #FFFFFF;
-  --color-yellow: #FFD600;
-
-  --transition-default:
-    background-color 0.2s ease,
-    color 0.2s ease,
-    border-color 0.2s ease,
-    transform 0.2s ease;
-
-  --container-padding: 100px;
-
-  --button-radius-pill: 30px;
-  --button-radius-circle: 50%;
-
-  --button-padding-sm: 8px 16px;
-  --button-padding-md: 12px 24px;
-  --button-padding-lg: 16px 32px;
-
-  --button-support-padding: 7px 27px;
-
-  --button-font-sm: 14px;
-  --button-font-md: 16px;
-  --button-font-lg: 18px;
-
-  --header-logo-size: 49px;
-
-  --header-nav-gap: 50px;
-  --header-actions-gap: 10px;
-  --header-nav-to-actions: 150px;
-}
+@import "./variables.css";
 
 * {
   box-sizing: border-box;

@@ -24,13 +24,17 @@
   font-size: 100px;
   font-weight: 700;
   line-height: 1.4;
-  color: #002B70;
+  color: var(--color-blue-700);
   margin-bottom: 10px;
   word-break: break-word;
 }
 
 .hero-diy {
-  background: linear-gradient(to bottom, #336CC9 0%, #FFE433 100%);
+  background: linear-gradient(
+    to bottom,
+    var(--color-blue-500) 0%,
+    var(--color-yellow-light) 100%
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -48,7 +52,7 @@
   width: 100%;
   max-width: 459px;
   height: 101px;
-  border-radius: 53px;
+  border-radius: var(--radius-pill);
   overflow: hidden;
   flex-shrink: 1;
 }
@@ -73,7 +77,7 @@
   width: 204px;
   height: 56px;
   margin-top: 58px;
-  font-size: 20px;
+  font-size: var(--font-size-body-xl);
   font-weight: 500;
 }
 
@@ -83,14 +87,14 @@
   bottom: -120px;
   width: 124px;
   height: 124px;
-  border: 2px solid #002B70;
+  border: 2px solid var(--color-blue-700);
   border-radius: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: #002B70;
+  color: var(--color-blue-700);
 }
 
 .hero-badge-icons {
@@ -99,7 +103,7 @@
 }
 
 .hero-badge-text {
-  font-size: 20px;
+  font-size: var(--font-size-body-xl);
   font-weight: 500;
   line-height: 100%;
 }
@@ -170,7 +174,7 @@
     width: 190px;
     height: 52px;
     margin-top: 42px;
-    font-size: 18px;
+    font-size: var(--font-size-body-lg);
   }
 
   .hero-badge {
@@ -236,7 +240,7 @@
   }
 
   .hero-badge-text {
-    font-size: 16px;
+    font-size: var(--font-size-body-md);
   }
 }
 
@@ -271,7 +275,7 @@
     width: 170px;
     height: 48px;
     margin-top: 28px;
-    font-size: 16px;
+    font-size: var(--font-size-body-md);
   }
 
   .hero-badge {
@@ -281,7 +285,7 @@
   }
 
   .hero-badge-text {
-    font-size: 14px;
+    font-size: var(--font-size-caption);
   }
 }
 
@@ -312,7 +316,7 @@
   .hero-btn {
     width: 160px;
     height: 46px;
-    font-size: 15px;
+    font-size: var(--font-size-body-sm);
   }
 
   .hero-badge {
@@ -349,7 +353,7 @@
   .hero-image {
     max-width: clamp(459px, 29vw, 700px);
     height: clamp(101px, 7vw, 150px);
-    border-radius: clamp(53px, 4vw, 80px);
+    border-radius: var(--radius-pill);
   }
 
   .hero-img-logo {

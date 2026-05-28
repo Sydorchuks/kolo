@@ -1,6 +1,6 @@
 .project-card {
-  background: #fff;
-  border-radius: 24px;
+  background: var(--color-white);
+  border-radius: var(--radius-md);
   padding: 24px;
   display: flex;
   flex-direction: column;
@@ -9,9 +9,9 @@
 .project-badge {
   display: inline-block;
   padding: 6px 14px;
-  border-radius: 999px;
-  border: 1px solid #0B3D91;
-  color: #0B3D91;
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--color-blue-900);
+  color: var(--color-blue-900);
   font-size: 14px;
   margin-bottom: 12px;
   width: fit-content;
@@ -20,13 +20,13 @@
 .project-title {
   font-size: 20px;
   font-weight: 700;
-  color: #0B3D91;
+  color: var(--color-blue-900);
   margin-bottom: 8px;
 }
 
 .project-desc {
   font-size: 14px;
-  color: #0B3D91;
+  color: var(--color-blue-900);
   margin-bottom: 16px;
 }
 

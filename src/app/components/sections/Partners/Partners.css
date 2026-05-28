@@ -2,7 +2,7 @@
   position: relative;
   padding-top: 58px;
   padding-bottom: 58px;
-  background: #042D88;
+  background: var(--color-surface-dark);
   overflow: hidden;
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
@@ -17,8 +17,8 @@
 
 .partners-text {
   width: 422px;
-  color: #FFFFFF;
-  font-size: 40px;
+  color: var(--color-white);
+  font-size: var(--font-size-title-md);
   font-weight: 600;
   line-height: 100%;
 }

@@ -2,8 +2,8 @@
   width: 100%;
   max-width: 393px;
   min-height: 331px;
-  background: #FFFFFF;
-  border-radius: 30px;
+  background: var(--color-white);
+  border-radius: var(--radius-lg);
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -29,7 +29,7 @@
 .gallery-title {
   max-width: 197px;
   margin: 0;
-  color: #042D88;
+  color: var(--color-blue-800);
   font-size: 20px;
   font-weight: 400;
   line-height: 110%;
@@ -45,7 +45,7 @@
 }
 
 .gallery-date {
-  color: #042D88;
+  color: var(--color-blue-800);
   font-size: 15px;
   font-weight: 400;
   line-height: 110%;
@@ -60,10 +60,10 @@
   min-width: 112px;
   height: 32px;
   padding: 6px 27px;
-  background: #042D88;
-  border: 1px solid #042D88;
+  background: var(--color-blue-800);
+  border: 1px solid var(--color-blue-800);
   border-radius: 20px;
-  color: #FFFFFF;
+  color: var(--color-white);
   font-size: 18px;
   font-weight: 500;
   line-height: 110%;

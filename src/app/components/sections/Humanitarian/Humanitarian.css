@@ -1,19 +1,19 @@
 .humanitarian {
   padding: 36px 100px 68px;
-  background: #F3F3F3;
+  background: var(--color-surface-secondary);
 }
 
 .humanitarian h2 {
   max-width: 675px;
   margin: 0 0 29px;
-  color: #042D88;
-  font-size: 50px;
+  color: var(--color-blue-800);
+  font-size: var(--font-size-title-lg);
   font-weight: 600;
   line-height: 95%;
 }
 
 .humanitarian .fi {
-  font-size: 20px;
+  font-size: var(--font-size-body-xl);
   vertical-align: bottom;
   position: relative;
 }
@@ -21,8 +21,8 @@
 .humanitarian .humanitarian-text,
 .humanitarian .humanitarian-link {
   max-width: 530px;
-  color: #042D88;
-  font-size: 20px;
+  color: var(--color-blue-800);
+  font-size: var(--font-size-body-xl);
   font-weight: 400;
   line-height: 110%;
 }
@@ -50,15 +50,15 @@
   position: relative;
   min-height: 345px;
   padding: 38px;
-  background: #042D88;
-  border-radius: 30px;
+  background: var(--color-surface-dark);
+  border-radius: var(--radius-lg);
   overflow: hidden;
   box-sizing: border-box;
 }
 
 .humanitarian .humanitarian-card h3 {
   margin: 0 0 20px;
-  color: #FFFFFF;
+  color: var(--color-white);
   font-size: 25px;
   font-weight: 500;
   line-height: 110%;
@@ -80,8 +80,8 @@
 
 .humanitarian .card-content p {
   margin: 0;
-  color: #FFFFFF;
-  font-size: 20px;
+  color: var(--color-white);
+  font-size: var(--font-size-body-xl);
   font-weight: 400;
   line-height: 120%;
 }
@@ -97,7 +97,7 @@
 
 @media (max-width: 1280px) {
   .humanitarian {
-    padding: 44px 0 60px;
+    padding: 44px 100px 60px;
   }
 
   .humanitarian h2 {
@@ -108,7 +108,7 @@
   .humanitarian .humanitarian-text,
   .humanitarian .humanitarian-link {
     max-width: 500px;
-    font-size: 18px;
+    font-size: var(--font-size-body-lg);
   }
 
   .humanitarian .humanitarian-cards {
@@ -126,7 +126,7 @@
   }
 
   .humanitarian .card-content p {
-    font-size: 18px;
+    font-size: var(--font-size-body-lg);
   }
 
   .humanitarian .card-decor {
@@ -136,7 +136,7 @@
 
 @media (max-width: 1024px) {
   .humanitarian {
-    padding: 48px 0 56px;
+    padding: 48px 100px 56px;
   }
 
   .humanitarian h2 {
@@ -146,7 +146,7 @@
   }
 
   .humanitarian .fi {
-    font-size: 18px;
+    font-size: var(--font-size-body-lg);
     top: 2px;
   }
 
@@ -170,7 +170,7 @@
   }
 
   .humanitarian .humanitarian-card h3 {
-    font-size: 20px;
+    font-size: var(--font-size-body-xl);
   }
 
   .humanitarian .card-content {
@@ -178,7 +178,7 @@
   }
 
   .humanitarian .card-content p {
-    font-size: 16px;
+    font-size: var(--font-size-body-md);
   }
 
   .humanitarian .card-decor {
@@ -190,7 +190,7 @@
 
 @media (max-width: 768px) {
   .humanitarian {
-    padding: 42px 0 50px;
+    padding: 42px 100px 50px;
   }
 
   .humanitarian h2 {
@@ -201,14 +201,14 @@
   }
 
   .humanitarian .fi {
-    font-size: 16px;
+    font-size: var(--font-size-body-md);
     top: 1px;
   }
 
   .humanitarian .humanitarian-text,
   .humanitarian .humanitarian-link {
     max-width: 100%;
-    font-size: 16px;
+    font-size: var(--font-size-body-md);
     line-height: 125%;
   }
 
@@ -239,7 +239,7 @@
   }
 
   .humanitarian .card-content p {
-    font-size: 16px;
+    font-size: var(--font-size-body-md);
     line-height: 135%;
   }
 
@@ -250,7 +250,7 @@
 
 @media (max-width: 480px) {
   .humanitarian {
-    padding: 36px 0 42px;
+    padding: 36px 20px 42px;
   }
 
   .humanitarian .container {
@@ -265,13 +265,13 @@
   }
 
   .humanitarian .fi {
-    font-size: 14px;
+    font-size: var(--font-size-caption);
     top: 1px;
   }
 
   .humanitarian .humanitarian-text,
   .humanitarian .humanitarian-link {
-    font-size: 15px;
+    font-size: var(--font-size-body-sm);
     line-height: 135%;
   }
 
@@ -285,11 +285,11 @@
 
   .humanitarian .humanitarian-card {
     padding: 22px 18px;
-    border-radius: 24px;
+    border-radius: var(--radius-md);
   }
 
   .humanitarian .humanitarian-card h3 {
-    font-size: 18px;
+    font-size: var(--font-size-body-lg);
     line-height: 120%;
     margin-bottom: 16px;
   }
@@ -299,7 +299,7 @@
   }
 
   .humanitarian .card-content p {
-    font-size: 14px;
+    font-size: var(--font-size-caption);
     line-height: 140%;
   }
 

@@ -1,7 +1,7 @@
 .project {
   width: 100%;
-  background: #FFFFFF;
-  border-radius: 30px;
+  background: var(--color-surface-primary);
+  border-radius: var(--radius-lg);
   padding: 19px 26px 28px;
   display: flex;
   flex-direction: column;
@@ -12,16 +12,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
   width: fit-content;
   min-width: 150px;
   height: 30px;
   padding: 6px 38px;
-  border: 1px solid #336CC9;
-  border-radius: 30px;
-
-  color: #336CC9;
-  font-size: 15px;
+  border: 1px solid var(--color-blue-500);
+  border-radius: var(--radius-lg);
+  color: var(--color-blue-500);
+  font-size: var(--font-size-body-sm);
   font-weight: 500;
   line-height: 120%;
   margin-bottom: 20px;
@@ -31,7 +29,7 @@
   width: 100%;
   margin-bottom: 11px;
   color: #03246D;
-  font-size: 20px;
+  font-size: var(--font-size-body-xl);
   font-weight: 500;
   line-height: 110%;
 }
@@ -39,8 +37,8 @@
 .project-desc {
   width: 100%;
   margin-bottom: 20px;
-  color: #042D88;
-  font-size: 16px;
+  color: var(--color-blue-800);
+  font-size: var(--font-size-body-md);
   font-weight: 500;
   line-height: 110%;
 }
@@ -64,8 +62,8 @@
   min-height: 34px;
   height: auto;
   padding: 8px 24px;
-  border-radius: 30px;
-  font-size: 15px;
+  border-radius: var(--radius-lg);
+  font-size: var(--font-size-body-sm);
   font-weight: 500;
   line-height: 120%;
 }

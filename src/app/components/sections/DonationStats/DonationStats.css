@@ -3,7 +3,7 @@
   padding: 93px 0 98px;
   background:
     url("/DonationStatsLines.png") center center / cover no-repeat,
-    #042D88;
+    var(--color-surface-dark);
   overflow: hidden;
 }
 
@@ -20,8 +20,8 @@
 
 .donation-stats .donation-left h2 {
   margin: 0;
-  color: #FFFFFF;
-  font-size: 40px;
+  color: var(--color-white);
+  font-size: var(--font-size-title-md);
   font-weight: 500;
   line-height: 100%;
   letter-spacing: -0.01em;
@@ -33,9 +33,9 @@
 
 .donation-stats .donation-right p {
   margin: 0;
-  color: #FFFFFF;
+  color: var(--color-white);
   text-align: right;
-  font-size: 20px;
+  font-size: var(--font-size-body-xl);
   font-weight: 400;
   line-height: 120%;
 }
@@ -51,7 +51,7 @@
   width: 605px;
   min-height: 81px;
   padding: 17px 28px;
-  border-radius: 30px;
+  border-radius: var(--radius-lg);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -60,13 +60,13 @@
 }
 
 .donation-stats .donation-box-dark {
-  border: 1px solid #FFFFFF;
+  border: 1px solid var(--color-white);
   background: transparent;
 }
 
 .donation-stats .donation-box-light {
-  background: #F3F3F3;
-  border: 1px solid #042D88;
+  background: var(--color-surface-secondary);
+  border: 1px solid var(--color-blue-800);
 }
 
 .donation-stats .donation-box span {
@@ -76,19 +76,19 @@
 }
 
 .donation-stats .donation-box strong {
-  font-size: 40px;
+  font-size: var(--font-size-title-md);
   font-weight: 500;
   line-height: 100%;
 }
 
 .donation-stats .donation-box-dark span,
 .donation-stats .donation-box-dark strong {
-  color: #FFFFFF;
+  color: var(--color-white);
 }
 
 .donation-stats .donation-box-light span,
 .donation-stats .donation-box-light strong {
-  color: #042D88;
+  color: var(--color-blue-800);
 }
 
 .donation-stats .donation-header {
@@ -101,8 +101,8 @@
 .donation-stats .donation-header h2 {
   width: 720px;
   margin: 0;
-  color: #FFFFFF;
-  font-size: 50px;
+  color: var(--color-white);
+  font-size: var(--font-size-title-lg);
   font-weight: 500;
   line-height: 95%;
 }
@@ -111,9 +111,9 @@
   width: 190px;
   height: 38px;
   margin-top: 50px;
-  font-size: 15px;
+  font-size: var(--font-size-body-sm);
   font-weight: 600;
-  color: #042D88;
+  color: var(--color-blue-800);
   flex-shrink: 0;
 }
 
@@ -128,14 +128,14 @@
   width: 288px;
   height: 185px;
   padding: 30px 0 29px 32px;
-  background: #F3F3F3;
-  border-radius: 30px;
+  background: var(--color-surface-secondary);
+  border-radius: var(--radius-lg);
   box-sizing: border-box;
 }
 
 .donation-stats .donation-card p {
   margin: 0;
-  color: #042D88;
+  color: var(--color-blue-800);
   font-size: 23px;
   font-weight: 500;
   line-height: 110%;
@@ -146,7 +146,7 @@
   left: 32px;
   bottom: 29px;
   margin: 0;
-  color: #042D88;
+  color: var(--color-blue-800);
   font-size: 70px;
   font-weight: 500;
   line-height: 95%;
@@ -206,7 +206,7 @@
   }
 
   .donation-stats .donation-right p {
-    font-size: 18px;
+    font-size: var(--font-size-body-lg);
   }
 
   .donation-stats .donation-contribution {
@@ -251,7 +251,7 @@
   }
 
   .donation-stats .donation-card p {
-    font-size: 20px;
+    font-size: var(--font-size-body-xl);
   }
 
   .donation-stats .donation-card h3 {
@@ -302,7 +302,7 @@
 
   .donation-stats .donation-header h2 {
     width: 100%;
-    font-size: 40px;
+    font-size: var(--font-size-title-md);
   }
 
   .donation-stats .donation-header .btn-yellow {
@@ -344,7 +344,7 @@
   }
 
   .donation-stats .donation-box span {
-    font-size: 18px;
+    font-size: var(--font-size-body-lg);
   }
 
   .donation-stats .donation-box strong {
@@ -362,11 +362,11 @@
   .donation-stats .donation-card {
     width: 100%;
     height: 160px;
-    border-radius: 24px;
+    border-radius: var(--radius-md);
   }
 
   .donation-stats .donation-card p {
-    font-size: 18px;
+    font-size: var(--font-size-body-lg);
   }
 
   .donation-stats .donation-card h3 {
@@ -393,7 +393,7 @@
   }
 
   .donation-stats .donation-right p {
-    font-size: 15px;
+    font-size: var(--font-size-body-sm);
     line-height: 130%;
   }
 
@@ -409,11 +409,11 @@
   }
 
   .donation-stats .donation-box span {
-    font-size: 15px;
+    font-size: var(--font-size-body-sm);
   }
 
   .donation-stats .donation-box strong {
-    font-size: 24px;
+    font-size: var(--font-size-body-2xl);
   }
 
   .donation-stats .donation-header {

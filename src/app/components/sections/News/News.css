@@ -1,5 +1,5 @@
 .news {
-  background: #F3F3F3;
+  background: var(--color-surface-secondary);
   padding-top: 50px;
 }
 
@@ -19,8 +19,8 @@
   gap: 56px;
 }
 
-.news-header h2{
-  font-size: 50px;
+.news-header h2 {
+  font-size: var(--font-size-title-lg);
   font-weight: 700;
 }
 
@@ -28,10 +28,10 @@
   display: flex;
 }
 
-.news-actions button{
+.news-actions button {
   width: 163px;
   height: 38px;
-  font-size: 15px;
+  font-size: var(--font-size-body-sm);
   font-weight: 600;
 }
 
@@ -62,7 +62,7 @@
   .news-actions button {
     width: 150px;
     height: 36px;
-    font-size: 14px;
+    font-size: var(--font-size-caption);
   }
 
   .news-grid {
@@ -99,7 +99,7 @@
   .news-actions button {
     width: 155px;
     height: 38px;
-    font-size: 14px;
+    font-size: var(--font-size-caption);
   }
 
   .news-grid {
@@ -125,7 +125,7 @@
     width: 100%;
   }
 
-  .news-header .title .title-line{
+  .news-header .title .title-line {
     display: none;
   }
 
@@ -146,7 +146,7 @@
   .news-actions button {
     width: 180px;
     height: 40px;
-    font-size: 14px;
+    font-size: var(--font-size-caption);
   }
 
   .news-grid {
@@ -178,16 +178,17 @@
     height: 50px;
   }
 
-  .news-actions button{
+  .news-actions button {
     min-width: 320px;
     margin-left: -100px;
   }
 
-  .news-header h2{
-    font-size: 40px;
+  .news-header h2 {
+    font-size: var(--font-size-title-md);
     margin-bottom: -40px;
   }
 }
+
 @media (min-width: 1441px) {
   .news {
     padding-top: clamp(90px, 7vw, 160px);
@@ -264,7 +265,7 @@
     min-width: clamp(120px, 8vw, 190px);
     height: clamp(36px, 2.2vw, 52px);
     padding: 0 clamp(18px, 1vw, 30px);
-    border-radius: 999px;
+    border-radius: var(--radius-pill);
     font-size: clamp(16px, 0.9vw, 22px);
   }
 
@@ -288,7 +289,7 @@
     width: clamp(200px, 12vw, 320px);
     height: clamp(38px, 2.6vw, 58px);
     padding: 0;
-    border-radius: 999px;
+    border-radius: var(--radius-pill);
     font-size: clamp(15px, 0.9vw, 22px);
   }
 }
@@ -323,13 +324,13 @@
   .news .news-date {
     min-width: 210px;
     height: 58px;
-    font-size: 24px;
+    font-size: var(--font-size-body-2xl);
   }
 
   .news .news-content .btn,
   .news .news-content button {
     width: 340px;
     height: 64px;
-    font-size: 24px;
+    font-size: var(--font-size-body-2xl);
   }
 }

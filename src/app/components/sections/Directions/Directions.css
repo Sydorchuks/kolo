@@ -2,7 +2,7 @@
   position: relative;
   padding-top: 80px;
   padding-bottom: 76px;
-  background: #F3F3F3;
+  background: var(--color-gray-50);
   overflow: hidden;
 }
 
@@ -39,7 +39,7 @@
   font-size: 50px;
   font-weight: 600;
   line-height: 100%;
-  color: #042D88;
+  color: var(--color-blue-800);
 }
 
 .directions-texts {
@@ -51,7 +51,7 @@
 
 .directions-text {
   width: 499px;
-  color: #042D88;
+  color: var(--color-blue-800);
   font-size: 20px;
   font-weight: 400;
   line-height: 110%;
@@ -74,7 +74,7 @@
 .direction-card {
   width: 287px;
   height: 205px;
-  border-radius: 30px;
+  border-radius: var(--radius-lg);
 }
 
 .direction-card-inner {
@@ -98,13 +98,13 @@
 }
 
 .direction-card-blue {
-  background: #042D88;
-  color: #FFFFFF;
+  background: var(--color-blue-800);
+  color: var(--color-white);
 }
 
 .direction-card-light {
-  background: #FFFFFF;
-  color: #042D88;
+  background: var(--color-white);
+  color: var(--color-blue-800);
 }
 
 .directions-banner {
@@ -113,8 +113,8 @@
   max-width: 1240px;
   height: 182px;
   margin-top: 54px;
-  background: #042D88;
-  border-radius: 40px;
+  background: var(--color-blue-800);
+  border-radius: var(--radius-2xl);
   overflow: hidden;
 }
 
@@ -132,7 +132,7 @@
   width: 920px;
   margin-left: 280px;
   padding-top: 61px;
-  color: #FFFFFF;
+  color: var(--color-white);
   text-align: right;
 }
 
