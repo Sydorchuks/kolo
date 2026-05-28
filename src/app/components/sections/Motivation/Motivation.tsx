@@ -25,13 +25,13 @@ export default function Motivation() {
             <div className="motivation-card">
               <img src="/help.png" className="card-icon" />
               <h3>Допомога</h3>
-              <p>Але я повинен пояснити вам...</p>
+              <p>Lorem: Але я повинен пояснити вам, як народилася вся ця помилкова ідея про засудження задоволення.</p>
             </div>
 
             <div className="motivation-card">
               <img src="/patriot.png" className="card-icon" />
               <h3>Патріотизм</h3>
-              <p>Але я повинен пояснити вам...</p>
+              <p>Lorem: Але я повинен пояснити вам, як народилася вся ця помилкова ідея про засудження задоволення.</p>
             </div>
           </div>
 
@@ -45,7 +45,7 @@ export default function Motivation() {
               <img src="/logo.png" className="center-logo" />
 
               <Button className="center-btn" variant="yellow">
-                Більше<br />про фонд
+                Більше <br />про фонд
               </Button>
 
             </div>
@@ -55,18 +55,16 @@ export default function Motivation() {
             <div className="motivation-card">
               <img src="/support.png" className="card-icon" />
               <h3>Надання необхідного</h3>
-              <p>Але я повинен пояснити вам...</p>
+              <p>Lorem: Але я повинен пояснити вам, як народилася вся ця помилкова ідея про засудження задоволення.</p>
             </div>
 
             <div className="motivation-card">
               <img src="/safety.png" className="card-icon" />
               <h3>Безпека</h3>
-              <p>Але я повинен пояснити вам...</p>
+              <p>Lorem: Але я повинен пояснити вам, як народилася вся ця помилкова ідея про засудження задоволення.</p>
             </div>
           </div>
-
         </div>
-
       </Container>
     </section>
   )

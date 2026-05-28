@@ -1,161 +1,378 @@
 .humanitarian {
-  padding: 40px 0;
+  padding: 36px 100px 68px;
   background: #F3F3F3;
 }
 
-.humanitarian-container {
-  width: 85%;
-  margin: 0 auto;
-}
-
 .humanitarian h2 {
-  font-size: 56px;
-  line-height: 1.15;
-  color: #0B3D91;
-  margin-bottom: 24px;
-  max-width: 800px;
+  max-width: 675px;
+  margin: 0 0 29px;
+  color: #042D88;
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 95%;
 }
 
-.humanitarian-text {
+.humanitarian .fi {
   font-size: 20px;
-  color: #0B3D91;
-  max-width: 700px;
-  margin-bottom: 12px;
+  vertical-align: bottom;
+  position: relative;
 }
 
-.humanitarian-link {
+.humanitarian .humanitarian-text,
+.humanitarian .humanitarian-link {
+  max-width: 530px;
+  color: #042D88;
   font-size: 20px;
-  color: #0B3D91;
-  margin-bottom: 50px;
+  font-weight: 400;
+  line-height: 110%;
 }
 
-.humanitarian-link span {
+.humanitarian .humanitarian-text {
+  margin-bottom: 22px;
+}
+
+.humanitarian .humanitarian-link {
+  margin-bottom: 51px;
+}
+
+.humanitarian .humanitarian-link span {
   text-decoration: underline;
   cursor: pointer;
 }
 
-.humanitarian-cards {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
+.humanitarian .humanitarian-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 604px);
+  gap: 31px;
 }
 
-.humanitarian-card {
-  background: #163E8C;
-  border-radius: 30px;
-  padding: 40px;
-  color: #fff;
-  width: 42%;
+.humanitarian .humanitarian-card {
   position: relative;
+  min-height: 345px;
+  padding: 38px;
+  background: #042D88;
+  border-radius: 30px;
+  overflow: hidden;
+  box-sizing: border-box;
 }
 
-.humanitarian-card h3 {
-  font-size: 22px;
+.humanitarian .humanitarian-card h3 {
+  margin: 0 0 20px;
+  color: #FFFFFF;
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 110%;
 }
 
-.card-content {
+.humanitarian .humanitarian-card.left h3 {
+  max-width: 466px;
+}
+
+.humanitarian .humanitarian-card:not(.left) h3 {
+  max-width: 541px;
+}
+
+.humanitarian .card-content {
   display: flex;
   flex-direction: column;
-  font-size: 18px;
-  line-height: 0.5;
+  gap: 10px;
 }
 
-.card-decor {
+.humanitarian .card-content p {
+  margin: 0;
+  color: #FFFFFF;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+.humanitarian .card-decor {
   position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 140px;
+  right: -8px;
+  bottom: -8px;
+  width: 120px;
+  object-fit: contain;
+  pointer-events: none;
 }
 
-@media (max-width: 1024px) {
-  .humanitarian h2 {
-    font-size: 44px;
-    max-width: 650px;
+@media (max-width: 1280px) {
+  .humanitarian {
+    padding: 44px 0 60px;
   }
 
-  .humanitarian-text,
-  .humanitarian-link {
+  .humanitarian h2 {
+    max-width: 620px;
+    font-size: 44px;
+  }
+
+  .humanitarian .humanitarian-text,
+  .humanitarian .humanitarian-link {
+    max-width: 500px;
     font-size: 18px;
   }
 
-  .humanitarian-cards {
+  .humanitarian .humanitarian-cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 24px;
   }
 
-  .humanitarian-card {
-    width: 48%;
-    padding: 30px;
+  .humanitarian .humanitarian-card {
+    min-height: 320px;
+    padding: 32px;
   }
 
-  .card-content {
+  .humanitarian .humanitarian-card h3 {
+    font-size: 22px;
+  }
+
+  .humanitarian .card-content p {
+    font-size: 18px;
+  }
+
+  .humanitarian .card-decor {
+    width: 105px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .humanitarian {
+    padding: 48px 0 56px;
+  }
+
+  .humanitarian h2 {
+    max-width: 560px;
+    font-size: 38px;
+    margin-bottom: 24px;
+  }
+
+  .humanitarian .fi {
+    font-size: 18px;
+    top: 2px;
+  }
+
+  .humanitarian .humanitarian-text,
+  .humanitarian .humanitarian-link {
+    max-width: 480px;
+    font-size: 17px;
+  }
+
+  .humanitarian .humanitarian-link {
+    margin-bottom: 36px;
+  }
+
+  .humanitarian .humanitarian-cards {
+    gap: 20px;
+  }
+
+  .humanitarian .humanitarian-card {
+    min-height: 300px;
+    padding: 28px;
+  }
+
+  .humanitarian .humanitarian-card h3 {
+    font-size: 20px;
+  }
+
+  .humanitarian .card-content {
+    gap: 8px;
+  }
+
+  .humanitarian .card-content p {
     font-size: 16px;
-    line-height: 1.2;
+  }
+
+  .humanitarian .card-decor {
+    width: 90px;
+    right: -4px;
+    bottom: -4px;
   }
 }
 
 @media (max-width: 768px) {
-  .humanitarian-container {
-    width: 80%;
+  .humanitarian {
+    padding: 42px 0 50px;
   }
 
   .humanitarian h2 {
-    font-size: 36px;
     max-width: 100%;
+    font-size: 34px;
+    line-height: 98%;
+    margin-bottom: 22px;
   }
 
-  .humanitarian-text,
-  .humanitarian-link {
+  .humanitarian .fi {
     font-size: 16px;
+    top: 1px;
   }
 
-  .humanitarian-cards {
-    flex-direction: column;
-    gap: 20px;
+  .humanitarian .humanitarian-text,
+  .humanitarian .humanitarian-link {
+    max-width: 100%;
+    font-size: 16px;
+    line-height: 125%;
   }
 
-  .humanitarian-card {
-    width: 100%;
-    padding: 28px;
+  .humanitarian .humanitarian-text {
+    margin-bottom: 16px;
   }
 
-  .card-content {
-    font-size: 15px;
-    line-height: 1.4;
+  .humanitarian .humanitarian-link {
+    margin-bottom: 30px;
   }
 
-  .card-decor {
-    width: 100px;
+  .humanitarian .humanitarian-cards {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .humanitarian .humanitarian-card {
+    min-height: auto;
+    padding: 28px 24px;
+  }
+
+  .humanitarian .humanitarian-card h3,
+  .humanitarian .humanitarian-card.left h3,
+  .humanitarian .humanitarian-card:not(.left) h3 {
+    max-width: 100%;
+    font-size: 22px;
+    margin-bottom: 18px;
+  }
+
+  .humanitarian .card-content p {
+    font-size: 16px;
+    line-height: 135%;
+  }
+
+  .humanitarian .card-decor {
+    width: 95px;
   }
 }
 
 @media (max-width: 480px) {
   .humanitarian {
-    padding: 30px 0;
+    padding: 36px 0 42px;
   }
 
-  .humanitarian-container {
-    width: 78%;
+  .humanitarian .container {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
   }
 
   .humanitarian h2 {
-    font-size: 28px;
+    font-size: clamp(30px, 8vw, 42px);
+    line-height: 92%;
+    margin-bottom: 20px;
   }
 
-  .humanitarian-text,
-  .humanitarian-link {
+  .humanitarian .fi {
     font-size: 14px;
+    top: 1px;
   }
 
-  .humanitarian-card {
-    padding: 22px;
+  .humanitarian .humanitarian-text,
+  .humanitarian .humanitarian-link {
+    font-size: 15px;
+    line-height: 135%;
+  }
+
+  .humanitarian .humanitarian-link {
+    margin-bottom: 24px;
+  }
+
+  .humanitarian .humanitarian-cards {
+    gap: 16px;
+  }
+
+  .humanitarian .humanitarian-card {
+    padding: 22px 18px;
     border-radius: 24px;
   }
 
-  .card-content {
-    font-size: 14px;
+  .humanitarian .humanitarian-card h3 {
+    font-size: 18px;
+    line-height: 120%;
+    margin-bottom: 16px;
   }
 
-  .card-decor {
-    width: 80px;
+  .humanitarian .card-content {
+    gap: 6px;
+  }
+
+  .humanitarian .card-content p {
+    font-size: 14px;
+    line-height: 140%;
+  }
+
+  .humanitarian .card-decor {
+    width: 76px;
+    right: -2px;
+    bottom: -2px;
+  }
+}
+
+@media (min-width: 1441px) {
+  .humanitarian {
+    padding-top: clamp(48px, 4vw, 90px);
+    padding-bottom: clamp(80px, 5vw, 140px);
+  }
+
+  .humanitarian h2 {
+    max-width: 1100px;
+    margin-bottom: clamp(32px, 2vw, 52px);
+    font-size: clamp(58px, 3.4vw, 96px);
+  }
+
+  .humanitarian .fi {
+    font-size: clamp(24px, 1.2vw, 38px);
+  }
+
+  .humanitarian .humanitarian-text,
+  .humanitarian .humanitarian-link {
+    max-width: 900px;
+    font-size: clamp(24px, 1.3vw, 34px);
+    line-height: 120%;
+  }
+
+  .humanitarian .humanitarian-text {
+    margin-bottom: clamp(24px, 1.5vw, 36px);
+  }
+
+  .humanitarian .humanitarian-link {
+    margin-bottom: clamp(50px, 3vw, 90px);
+  }
+
+  .humanitarian .humanitarian-cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: clamp(32px, 2vw, 60px);
+  }
+
+  .humanitarian .humanitarian-card {
+    min-height: clamp(420px, 24vw, 620px);
+    padding: clamp(42px, 3vw, 72px);
+    border-radius: clamp(34px, 2vw, 52px);
+  }
+
+  .humanitarian .humanitarian-card h3,
+  .humanitarian .humanitarian-card.left h3,
+  .humanitarian .humanitarian-card:not(.left) h3 {
+    max-width: 100%;
+    margin-bottom: clamp(24px, 2vw, 40px);
+    font-size: clamp(30px, 1.8vw, 52px);
+    line-height: 115%;
+  }
+
+  .humanitarian .card-content {
+    gap: clamp(10px, 1vw, 18px);
+  }
+
+  .humanitarian .card-content p {
+    font-size: clamp(24px, 1.3vw, 38px);
+    line-height: 130%;
+  }
+
+  .humanitarian .card-decor {
+    width: clamp(120px, 8vw, 220px);
+    right: -10px;
+    bottom: -10px;
   }
 }

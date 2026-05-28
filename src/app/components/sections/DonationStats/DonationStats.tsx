@@ -1,13 +1,24 @@
-import Section from "../../ui/Section/Section"
+import Container from "../../ui/Container/Container"
 import Button from "../../ui/Button/Button"
 import "./DonationStats.css"
 
+const stats = [
+  { title: "Евакуювали людей", value: "4000" },
+  { title: "Гуманітарна допомога", value: "2300т" },
+  { title: "Закупили дрони", value: "432" },
+  { title: "Навчили операторів БПЛА", value: "411" },
+  { title: "Поставили бойові аптечки", value: "1300" },
+  { title: "Купили амуніцію", value: "4560" },
+  { title: "Надіслали медикаменти", value: "60т" },
+  { title: "Придбали бойові радіостанції", value: "2000" },
+]
+
 export default function DonationStats() {
   return (
-    <Section className="donation-stats">
-      <div className="donation-container">
-
+    <section className="donation-stats">
+      <Container>
         <div className="donation-top">
+
           <div className="donation-left">
             <h2>
               Обертаємо коло тут і зараз.<br />
@@ -18,8 +29,10 @@ export default function DonationStats() {
 
           <div className="donation-right">
             <p>
-              Понад 8 років робимо масштабні проекти у сферах медицини,
-              культури та освіти. Бо це стовпи сильної держави.
+              Понад 8 років робимо масштабні
+              проєкти у сферах медицини,
+              культури та освіти. Бо це стовпи
+              сильної держави.
             </p>
           </div>
         </div>
@@ -38,32 +51,27 @@ export default function DonationStats() {
 
         <div className="donation-header">
           <h2>
-            Результати роботи під час<br />
+            Результати роботи під час
             повномасштабної війни
           </h2>
 
-          <Button variant="yellow">Детальна звітність</Button>
+          <Button variant="yellow">
+            Детальна звітність
+          </Button>
         </div>
 
         <div className="donation-grid">
-          {[
-            { title: "Евакуювали людей", value: "4000" },
-            { title: "Гуманітарна допомога", value: "2300т" },
-            { title: "Закупили дрони", value: "432" },
-            { title: "Навчили операторів БПЛА", value: "411" },
-            { title: "Поставили аптечки", value: "1300" },
-            { title: "Купили амуніцію", value: "4560" },
-            { title: "Надіслали медикаменти", value: "60т" },
-            { title: "Придбали радіостанції", value: "2000" },
-          ].map((item, i) => (
-            <div className="donation-card" key={i}>
+          {stats.map((item, index) => (
+            <div
+              className="donation-card"
+              key={index}
+            >
               <p>{item.title}</p>
               <h3>{item.value}</h3>
             </div>
           ))}
         </div>
-
-      </div>
-    </Section>
+      </Container>
+    </section>
   )
 }

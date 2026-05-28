@@ -7,7 +7,12 @@ type Props = {
   amount: string
 }
 
-export default function GalleryCard({ image, title, date, amount }: Props) {
+export default function GalleryCard({
+  image,
+  title,
+  date,
+  amount
+}: Props) {
   return (
     <div className="gallery-card">
       <img src={image} alt="" className="gallery-img" />

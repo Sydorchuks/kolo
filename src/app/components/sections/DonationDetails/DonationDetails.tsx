@@ -1,6 +1,6 @@
 "use client"
-
 import { useState } from "react"
+import Container from "../../ui/Container/Container"
 import "./DonationDetails.css"
 
 type Row = {
@@ -9,13 +9,34 @@ type Row = {
 }
 
 const data: Row[] = [
-  { label: "Отримувач:", value: "Благодійна організація «Благодійний фонд «КОЛО»" },
-  { label: "Код отримувача:", value: "38813073" },
-  { label: "Назва банку:", value: "АТ КБ \"ПРИВАТБАНК\"" },
-  { label: "Bank SWIFT Code:", value: "PBANUA2X" },
-  { label: "UAH:", value: "UA243052990000026007026706447" },
-  { label: "EUR:", value: "UA663052990000026000046706747" },
-  { label: "USD:", value: "UA863052990000026008036712787" }
+  {
+    label: "Отримувач:",
+    value: "Благодійна організація «Благодійний фонд «КОЛО»"
+  },
+  {
+    label: "Код отримувача:",
+    value: "38813073"
+  },
+  {
+    label: "Назва банку:",
+    value: "АТ КБ \"ПРИВАТБАНК\""
+  },
+  {
+    label: "Bank SWIFT Code:",
+    value: "PBANUA2X"
+  },
+  {
+    label: "UAH:",
+    value: "UA243052990000026007026706447"
+  },
+  {
+    label: "EUR:",
+    value: "UA663052990000026000046706747"
+  },
+  {
+    label: "USD:",
+    value: "UA863052990000026008036712787"
+  }
 ]
 
 export default function DonationDetails() {
@@ -33,47 +54,55 @@ export default function DonationDetails() {
 
   return (
     <section className="donation-details">
-      <div className="donation-container">
-
+      <Container>
         <h2>
-          Зробити благодійний внесок можна карткою або за реквізитами
+          Зробити благодійний внесок можна карткою або за <br />
+          реквізитами
         </h2>
 
         <div className="donation-actions">
-          <button className="btn-primary">Підтримати</button>
-          <button className="btn-outline">Деталі рахунків</button>
+          <button className="btn-primary">
+            Підтримати
+          </button>
+
+          <button className="btn-outline">
+            Деталі рахунків
+          </button>
         </div>
 
         <div className="donation-box">
+          <div className="donation-box-inner">
 
-          {data.map((item) => (
-            <div className="donation-row" key={item.label}>
-
-              <p className="donation-label">{item.label}</p>
-
-              <div className="donation-value">
-
-                <button
-                  className="copy-btn"
-                  onClick={() => handleCopy(item.value)}
-                >
-                  <span className="copy-icon" />
-                </button>
-
-                <span>{item.value}</span>
-
+            {data.map((item) => (
+              <div
+                className="donation-row"
+                key={item.label}
+              >
+                <p className="donation-label">
+                  {item.label}
+                </p>
+                <div className="donation-value">
+                  <button
+                    className="copy-btn"
+                    onClick={() => handleCopy(item.value)}
+                  >
+                    <img
+                      src="/copy-icon.svg"
+                      alt="copy"
+                      className="copy-icon"
+                    />
+                  </button>
+                  <span>{item.value}</span>
+                </div>
               </div>
-
-            </div>
-          ))}
-
+            ))}
+          </div>
         </div>
 
         <div className={`toast ${toast ? "show" : ""}`}>
           Скопійовано
         </div>
-
-      </div>
+      </Container>
     </section>
   )
 }

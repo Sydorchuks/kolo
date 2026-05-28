@@ -1,93 +1,117 @@
 .motivation {
-  padding: 60px 0;
-  margin-top: 100px;
-
-  background: #F3F3F3;
   position: relative;
-
+  padding-top: 98px;
+  padding-bottom: 120px;
+  margin-top: 100px;
+  background: #F3F3F3;
+  overflow: hidden;
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
 }
 
 .motivation-header {
-  margin-bottom: 70px;
+  width: 100%;
 }
 
+.motivation-header .title {
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+
+.motivation-header .title-left {
+  width: 100%;
+  gap: 23px;
+  min-width: calc(100vw + 300px);
+}
+
+
 .motivation-header h2 {
-  font-size: 52px;
-  font-weight: 900;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 100%;
   color: #002B70;
 }
 
 .motivation-subtitle {
-  max-width: 520px;
+  width: 520px;
   color: #002B70;
-  font-size: 16px;
-  line-height: 1.5;
-  margin-top: 12px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 110%;
 }
 
 .motivation-content {
   display: grid;
-  grid-template-columns: 1fr 520px 1fr;
-  gap: 40px;
+  grid-template-columns: 318px 394px 318px;
+  justify-content: center;
   align-items: center;
+  column-gap: 111px;
 }
 
 .motivation-column {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 30px;
 }
 
 .motivation-card {
+  width: 318px;
+  height: 182px;
+  padding: 22px 20px 24px 21px;
   background: #FFFFFF;
-  padding: 24px;
-  border-radius: 20px;
+  border-radius: 30px;
 }
 
 .card-icon {
-  width: 36px;
-  margin-bottom: 8px;
+  width: 40px;
+  height: 40px;
+  margin-bottom: 5px;
 }
 
 .motivation-card h3 {
+  margin-bottom: 12px;
   color: #002B70;
-  font-size: 18px;
-  font-weight: 700;
-  margin-bottom: 6px;
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 100%;
 }
 
 .motivation-card p {
   color: #002B70;
-  font-size: 14px;
-  line-height: 1.5;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 130%;
 }
 
 .motivation-center {
   display: flex;
   justify-content: center;
+  margin-top: 100px;
 }
 
 .center-wrapper {
   position: relative;
-  width: 100%;
-  max-width: 500px;
+  width: 394px;
+  height: 494px;
 }
 
 .center-img {
-  width: 100%;
-  border-radius: 40px;
   position: relative;
   z-index: 2;
+  width: 394px;
+  height: 394px;
+  object-fit: cover;
+  border-radius: 80px;
 }
 
 .center-logo {
   position: absolute;
-  top: -60px;
+  top: -48px;
   left: 50%;
   transform: translateX(-50%);
-  width: 64px;
+  width: 43px;
+  height: 43px;
   z-index: 5;
 }
 
@@ -95,6 +119,7 @@
   position: absolute;
   inset: -30px;
   pointer-events: none;
+  z-index: 1;
 }
 
 .center-lines::before,
@@ -102,73 +127,233 @@
   content: "";
   position: absolute;
   top: 0;
-  height: 220px;
-  width: calc(50% - 40px);
+  width: 190px;
+  height: 246px;
 }
 
 .center-lines::before {
-  left: 0;
-  border-left: 4px dashed #002B70;
-  border-top: 4px dashed #002B70;
-  border-top-left-radius: 80px;
+  right: 260px;
+  border-left: 3px dashed #002B70;
+  border-top: 3px dashed #002B70;
+  border-top-left-radius: 120px;
 }
 
 .center-lines::after {
-  right: 0;
-  border-right: 4px dashed #002B70;
-  border-top: 4px dashed #002B70;
-  border-top-right-radius: 80px;
+  left: 260px;
+  border-top: 3px dashed #002B70;
+  border-right: 3px dashed #002B70;
+  border-top-right-radius: 120px;
 }
 
 .center-btn {
   position: absolute;
-  bottom: -60px;
   left: 50%;
+  bottom:50px;
   transform: translateX(-50%);
-  width: 120px;
-  height: 120px;
+  width: 100px;
+  height: 100px;
+  padding: 0;
   border-radius: 50%;
-  font-size: 14px;
-  font-weight: 700;
-  z-index: 6;
+  color: #002B70;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 110%;
+  z-index: 10;
 }
 
-@media (max-width: 1024px) {
-  .motivation-content {
-    grid-template-columns: 1fr;
-    gap: 60px;
+@media (max-width: 1280px) {
+  .motivation {
+    padding-top: 80px;
+    padding-bottom: 100px;
   }
 
-  .motivation-column {
-    flex-direction: row;
-    justify-content: center;
-  }
-
-  .motivation-card {
-    max-width: 260px;
-  }
-
-  .center-wrapper {
-    max-width: 420px;
-  }
-
-  .center-lines::before,
-  .center-lines::after {
-    height: 120px;
+  .motivation-header {
+    margin-bottom: 80px;
   }
 
   .motivation-header h2 {
     font-size: 42px;
   }
+
+  .motivation-subtitle {
+    width: 460px;
+    font-size: 18px;
+  }
+
+  .motivation-content {
+    grid-template-columns: 280px 340px 280px;
+    column-gap: 70px;
+  }
+
+  .motivation-card {
+    width: 280px;
+    height: 200px;
+    padding: 20px 18px 22px 18px;
+  }
+
+  .motivation-card h3 {
+    font-size: 22px;
+  }
+
+  .center-wrapper {
+    width: 340px;
+    height: 430px;
+  }
+
+  .center-img {
+    width: 340px;
+    height: 340px;
+    border-radius: 64px;
+  }
+
+  .center-logo {
+    top: -42px;
+    width: 38px;
+    height: 38px;
+  }
+
+  .center-lines::before,
+  .center-lines::after {
+    width: 150px;
+    height: 220px;
+  }
+
+  .center-lines::before {
+    right: 250px;
+  }
+
+  .center-lines::after {
+    left: 250px;
+  }
+
+  .center-btn {
+    width: 92px;
+    height: 92px;
+    bottom: 38px;
+    font-size: 14px;
+  }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .motivation {
-    padding: 50px 0;
+    padding-top: 70px;
+    padding-bottom: 90px;
   }
 
   .motivation-header {
-    margin-bottom: 40px;
+    width: 100%;
+    margin-bottom: 80px;
+  }
+
+  .motivation-header .title {
+    width: 100%;
+  }
+
+  .motivation-header .title-left {
+    width: 100%;
+  }
+
+  .motivation-header .title-line {
+    flex: 1;
+  }
+
+  .motivation-header h2 {
+    font-size: 42px;
+  }
+
+  .motivation-subtitle {
+    width: 520px;
+    max-width: 100%;
+    font-size: 18px;
+  }
+
+  .motivation-content {
+    grid-template-columns: 1fr;
+    row-gap: 60px;
+  }
+
+  .motivation-column {
+    flex-direction: row;
+    justify-content: center;
+    gap: 28px;
+  }
+
+  .motivation-card {
+    width: 320px;
+    height: 220px;
+    padding: 24px 22px 26px;
+  }
+
+  .card-icon {
+    width: 44px;
+    height: 44px;
+  }
+
+  .motivation-card h3 {
+    font-size: 26px;
+  }
+
+  .motivation-card p {
+    font-size: 16px;
+  }
+
+  .motivation-center {
+    order: -1;
+    margin-top: 0;
+  }
+
+  .center-wrapper {
+    width: 380px;
+    height: 480px;
+  }
+
+  .center-img {
+    width: 380px;
+    height: 380px;
+    border-radius: 70px;
+  }
+
+  .center-logo {
+    top: -44px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .center-lines {
+    inset: -26px;
+  }
+
+  .center-lines::before,
+  .center-lines::after {
+    width: 180px;
+    height: 210px;
+    border-width: 2px;
+  }
+
+  .center-lines::before {
+    right: 245px;
+  }
+
+  .center-lines::after {
+    left: 245px;
+  }
+
+  .center-btn {
+    width: 100px;
+    height: 100px;
+    bottom: 36px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 700px) {
+  .motivation {
+    padding-top: 60px;
+    padding-bottom: 80px;
+  }
+
+  .motivation-header {
+    margin-bottom: 55px;
   }
 
   .motivation-header h2 {
@@ -176,67 +361,167 @@
   }
 
   .motivation-subtitle {
-    font-size: 14px;
+    width: 100%;
+    max-width: 420px;
+    font-size: 15px;
+  }
+
+  .motivation-content {
+    row-gap: 40px;
   }
 
   .motivation-column {
     flex-direction: column;
     align-items: center;
+    gap: 20px;
   }
 
   .motivation-card {
     width: 100%;
     max-width: 320px;
-    text-align: center;
+    height: auto;
+    min-height: 170px;
   }
 
   .center-wrapper {
-    max-width: 320px;
-  }
-
-  .center-logo {
-    width: 52px;
-    top: -40px;
-  }
-
-  .center-lines::before,
-  .center-lines::after {
-    height: 90px;
-    width: calc(50% - 30px);
-  }
-
-  .center-btn {
-    width: 90px;
-    height: 90px;
-    font-size: 11px;
-    bottom: -40px;
-  }
-}
-
-@media (max-width: 480px) {
-  .motivation-header h2 {
-    font-size: 26px;
-    margin-bottom: 40px;
-  }
-
-  .center-wrapper {
-    max-width: 260px;
+    width: 300px;
+    height: 390px;
   }
 
   .center-img {
-    border-radius: 28px;
+    width: 300px;
+    height: 300px;
+    border-radius: 52px;
+  }
+
+  .center-logo {
+    width: 30px;
+    height: 30px;
+    top: -32px;
   }
 
   .center-lines::before,
   .center-lines::after {
-    height: 70px;
-    width: calc(50% - 25px);
-    border-width: 3px;
+    width: 150px;
+    height: 160px;
+  }
+
+  .center-lines::before {
+    right: 200px;
+  }
+
+  .center-lines::after {
+    left: 200px;
   }
 
   .center-btn {
-    width: 80px;
-    height: 80px;
-    font-size: 10px;
+    width: 84px;
+    height: 84px;
+    bottom: 40px;
+    font-size: 13px;
+  }
+
+  .motivation-header .title-line {
+    display: none;
+  }
+}
+
+@media (max-width: 560px) {
+  .motivation {
+    padding-top: 50px;
+    padding-bottom: 70px;
+  }
+
+  .motivation-header h2 {
+    margin-left: -80px;
+    font-size: 28px;
+  }
+
+  .motivation-subtitle {
+    font-size: 14px;
+    min-width: 270px;
+    margin-left: -80px;
+  }
+
+  .motivation-card {
+    max-width: 100%;
+  }
+
+  .motivation-card h3 {
+    font-size: 22px;
+  }
+
+  .center-wrapper {
+    width: 260px;
+    height: 340px;
+  }
+
+  .center-img {
+    width: 260px;
+    height: 260px;
+    border-radius: 44px;
+  }
+
+  .center-logo {
+    width: 26px;
+    height: 26px;
+    top: -28px;
+  }
+
+  .center-lines {
+    display: none;
+  }
+
+  .center-btn {
+    width: 78px;
+    height: 78px;
+    bottom: 24px;
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 1441px) {
+  .motivation {
+    padding-top: 140px;
+    padding-bottom: 220px;
+  }
+
+  .motivation-header {
+    transform: scale(1.2);
+    margin-left: 100px;
+  }
+
+  .motivation-content {
+    transform: scale(1.2);
+    transform-origin: top center;
+  }
+}
+
+@media (min-width: 1800px) {
+  .motivation-content {
+    transform: scale(1.4);
+  }
+
+  .motivation-header h2 {
+    font-size: 62px;
+  }
+
+  .motivation-subtitle {
+    width: 650px;
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 2200px) {
+  .motivation-content {
+    transform: scale(1.7);
+  }
+
+  .motivation {
+    padding-bottom: 420px;
+  }
+  
+  .motivation-header{
+    margin-left: 200px;
   }
 }
